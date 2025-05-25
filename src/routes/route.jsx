@@ -5,6 +5,7 @@ import Root from "../pages/Root"
 import { Home } from "../pages/Home";
 import { Register } from "../pages/Register";
 import { Cart } from "../pages/Cart";
+import ProductDetails from "../pages/ProductDetails";
 
 export const rootRouter =  createBrowserRouter([
     {path: '/', 
@@ -12,6 +13,7 @@ export const rootRouter =  createBrowserRouter([
     children: [
         {path: "/", index:true, element: <Home/>},
         {path: "/about", element: <About/>},
+        {path: "/product/:id", element: <ProductDetails/>},
         {path: "/register", element: <Register/>},
         {path: "/cart", element: <Cart/>},
 

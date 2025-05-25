@@ -1,7 +1,8 @@
+import ProductList from "../components/ProductList"
 
 
 export const Home = () => {
     return(
-        <h1>home pagee</h1>
+        <ProductList/>
     )
 }
