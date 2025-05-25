@@ -72,9 +72,9 @@ export default function ProductList() {
 
 
   return (
-    <div className="bg-slate-100 mt-6">
+    <div className="bg-slate-100 mt-0 pt-20">
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <input type="text" name="search" id="search" className="md:px-32 focus:outline-cyan-600 text-center rounded-lg" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
       </div>
 
