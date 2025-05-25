@@ -75,13 +75,12 @@ export default function ProductList() {
     <div className="bg-slate-100 mt-6">
 
       <div className="flex justify-center ">
-        <input type="text" name="search" id="search" className="px-32 focus:outline-cyan-600 text-center rounded-lg" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
+        <input type="text" name="search" id="search" className="md:px-32 focus:outline-cyan-600 text-center rounded-lg" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
       </div>
 
       <h1 className="text-2xl text-cyan-800 font-bold text-center py-6">All Products</h1>
 
-
-      <div className="flex gap-4 justify-center mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center mb-6">
         <select
           value={sortCategory}
           onChange={(e) => setSortCategory(e.target.value)}
