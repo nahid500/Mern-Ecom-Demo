@@ -1,6 +1,7 @@
 import { useParams } from "react-router"
 import {data} from "../data/db"
 import { useEffect, useState } from "react"
+import { toast } from "react-toastify"
 
 export default function ProductDetails() {
 
@@ -22,9 +23,10 @@ export default function ProductDetails() {
             cart[checkProduct].quantity += 1
         }
         else{
-            cart.push({...product, quantity:1})
+            cart.push({ id: product.id, quantity:1})
         }
         localStorage.setItem("cart", JSON.stringify(cart))
+        toast.success("Added to Cart Successfully!")
         console.log(cart);
     } 
 
